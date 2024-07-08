@@ -1,25 +1,40 @@
-                                        Youtube-Data-Harvesting-and-Warehousing
+YouTube Data Harvesting and Warehousing:
+This project focuses on harvesting YouTube data using Python, specifically utilizing the Google API for YouTube. The harvested data is then transformed and stored in a MongoDB database and subsequently converted and warehoused in a MySQL server. The Streamlit framework is employed for creating an interactive web application to visualize insights derived from the harvested data.
 
-1.The provided code is a Python script that uses the Streamlit library to create a web application for fetching data from the YouTube API,storing it in a MongoDB database, and uploading it to a MySQL database for further analysis. Here's a brief explanation of the code:
+Project Objective:
+The objective of this project is to extract data from YouTube channels using the YouTube API, store the data in a MongoDB database, transform it, and then warehouse it in a MySQL server. Furthermore, the project aims to create an interactive web application using Streamlit for querying and visualizing insights from the harvested YouTube data.
 
-2.The script imports necessary libraries and modules, including Streamlit, Google API client, pymongo, datetime, time, pandas, numpy, matplotlib and mysql.connector.
+Business Task:
+1.Harvest data from multiple YouTube channels, including channel details, video details, and comments.
+2.Store the harvested data in a MongoDB database for further processing.
+3.Transform and warehouse the data into a MySQL server for long-term storage and querying.
+4.Develop an interactive web application using Streamlit to visualize insights and perform data analysis on the harvested YouTube data.
 
-3.It sets the Streamlit page configuration and displays a title for the web application.
+Recommendations:
+1.Ensure proper authentication and quota management for accessing the YouTube API.
+2.Optimize data retrieval methods to minimize API quota consumption and maximize efficiency.
+3.Implement robust error handling and logging mechanisms to handle API request failures and data processing errors.
+4.Regularly monitor and maintain the MongoDB and MySQL databases to ensure data integrity and performance.
+5.Enhance the Streamlit web application with additional features such as user authentication, caching, and data export capabilities.
 
-4.The code defines several functions for fetching data from the YouTube API, including channel statistics, playlist data, video IDs, video details and comment details. These functions use the provided YouTube API key to make API requests and retrieve the desired data.
+Coding Process (Steps):
+1.Set Up API Keys: Obtain API keys for the YouTube Data API from the Google Developer Console.
+2.Data Retrieval: Harvest YouTube channel details, video details, and comments using the YouTube API.
+3.Data Storage (MongoDB): Store the harvested data in a MongoDB database for temporary storage.
+4.Data Transformation: Transform the raw data into a suitable format for warehousing in a relational database.
+5.Data Warehousing (MySQL): Create tables in a MySQL server and upload the transformed data for long-term storage.
+6.Streamlit Development: Develop an interactive web application using Streamlit for querying and visualizing insights from the warehoused data.
+7.Testing and Deployment: Test the application thoroughly and deploy it to a suitable hosting platform.
 
-5.The code defines a function to fetch channel names from the MongoDB database.
+Getting Started:
+To run the project locally, follow these steps:
 
-6.The script creates a connection to the MongoDB database and defines collections for channel data, video data, and comment data.
+1.Clone this repository to your local machine.
+2.Install the required Python dependencies listed in requirements.txt.
+3.Obtain API keys for the YouTube Data API and MongoDB Atlas (optional).
+4.Configure the API keys and database connection settings in the project files.
+5.Run the Streamlit web application using the command streamlit run app.py.
+6.Access the application through the provided local URL in your web browser.
 
-7.The code checks for user input (channel ID) and a button click to fetch channel details and upload them to the MongoDB database.It calls the previously defined functions to fetch channel details, playlist data, video IDs, video details, and comment details.The fetched data is then inserted into the corresponding collections in the MongoDB database.
-
-8.After fetching and uploading the data to MongoDB, the script provides an option for the user to select channels for uploading the data to a MySQL database. It displays a multiselect input for channel selection and a button to upload the data to MySQL.
-
-9.When the button to upload data to MySQL is clicked, the script fetches channel details, video details, and comment details from the MongoDB collections. It establishes a connection to the MySQL database and inserts the data into corresponding tables using SQL queries. It uses pandas and the SQLAlchemy engine for the data insertion process.
-
-10.Finally, the script provides a selection box for the user to choose from several predefined questions. Based on the selected question, the script executes
-corresponding SQL queries on the MySQL database and retrieves the results. The results are displayed in a streamlit.
-
-Overall, the code combines the functionalities of fetching data from the YouTube API, storing it in MongoDB, uploading it to MySQL, and displaying the results in a web application using Streamlit.
-
+Contribution:
+FRAN LIZZA M
