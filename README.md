@@ -1,5 +1,5 @@
 YouTube Data Harvesting and Warehousing:
-This project focuses on harvesting YouTube data using Python, specifically utilizing the Google API for YouTube. The harvested data is then transformed and stored in a MongoDB database and subsequently converted and warehoused in a MySQL server. The Streamlit framework is employed for creating an interactive web application to visualize insights derived from the harvested data.
+This project focuses on harvesting YouTube data using Python, specifically utilizing the Google API for YouTube. The harvested data is then transformed and subsequently converted and warehoused in a MySQL server. The Streamlit framework is employed for creating an interactive web application to visualize insights derived from the harvested data.
 
 Project Objective:
 The objective of this project is to extract data from YouTube channels using the YouTube API, store the data in a transform it and then warehouse it in a MySQL server. Furthermore, the project aims to create an interactive web application using Streamlit for querying and visualizing insights from the harvested YouTube data.
